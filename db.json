@@ -1,0 +1,36 @@
+{
+  "register": [
+    {
+      "firstname": "John",
+      "secondname": "Doe",
+      "mail": "johndoe@gmail.com",
+      "position": "propertymanager",
+      "buildingname": "HSC Holdings",
+      "mobile": 712345678,
+      "password": "1234",
+      "rpassword": "1234",
+      "id": 1
+    },
+    {
+      "firstname": "",
+      "secondname": "",
+      "mail": "",
+      "position": "",
+      "buildingname": "",
+      "mobile": "",
+      "password": "",
+      "rpassword": "",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

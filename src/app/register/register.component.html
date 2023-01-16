@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Register</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+
+</head>
+
+<body class="bg-gradient-primary">
+
+    <div class="container">
+
+        <div class="card o-hidden border-0">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block ">
+
+                        <div class="text-center">
+                            <div class="text-info" style="font-weight: 900; font-size: 24px; color:#343a40; padding-top:30px;">Create Your
+                                Account with D-Viruz</div>
+                            <img src="./assets/img/register.png" style="max-width: 500px; max-height:600px" alt="login">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <form class="user" [formGroup]="registerForm" class="mx-1 mx-md-4"
+                                (ngSubmit)="registerUp()">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" formControlName="firstname"
+                                            class="form-control form-control-user" id="exampleFirstName"
+                                            placeholder="First Name">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" formControlName="secondname"
+                                            class="form-control form-control-user" id="exampleLastName"
+                                            placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" formControlName="mail" class="form-control form-control-user"
+                                        id="exampleInputEmail" placeholder="Email Address">
+                                </div>
+
+                                <div class="form-group">
+                                    <select class="form-control form-control-user" formControlName="position">
+                                        <option value="" selected>Position</option>
+                                        <option value="propertymanager">Property Manager</option>
+                                        <option value="landlordcontact">LandLord Contact</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group ">
+
+                                    <input type="text" formControlName="buildingname"
+                                        class="form-control form-control-user" id="exampleInputPasswor"
+                                        placeholder="Building Name">
+
+                                </div>
+
+
+                                <div class="form-group ">
+
+                                    <input type="number" formControlName="mobile" class="form-control form-control-user"
+                                        id="exampleInputword" placeholder="Phone Number">
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" formControlName="password"
+                                            class="form-control form-control-user" id="exampleInputPasword"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="password" formControlName="rpassword"
+                                            class="form-control form-control-user" id="exampleRepeatPassworddd"
+                                            placeholder="Repeat Password">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-info  btn-block mb-2">
+                                    Register Account
+                                </button>
+                            </form>
+                           <hr>
+                            <div class="text-center">
+                                <a class="small" routerLink="/login">Already have an account? Login!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
